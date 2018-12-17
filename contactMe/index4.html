@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style4.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $(".input, .text-area").val("");
+            });
+        });
+    </script>
+    <title>Contact Me</title>
+</head>
+<body>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="Ink Drip.MOV" type="video/mp4">
+    </video>
+
+ <div class="wrapper">
+        <a href="../Home Page/index.html">Home</a>
+     <div class="contact-me">
+         <div class="title">Contact Me </div>
+
+         <div class="input-fields">
+             <div class="items">
+                 <label for="name" class="label">name</label>
+                 <input id="name" type="text" class="input">
+             </div>
+             <div class="items">
+                 <label for="email" class="label">email</label>
+                 <input id="email" type="text" class="input">
+             </div>
+             <div class="items">
+                 <label for="subject" class="label">subject</label>
+                 <input id="subject" type="text" class="input">
+             </div>
+             <div class="items">
+                 <label for="msg" class="label">message</label>
+                 <textarea id="msg" class="text-area"></textarea>
+             </div>
+         </div>
+
+         <div class="btn">send</div>
+     </div>
+ </div>   
+    
+</body>
+</html>

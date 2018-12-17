@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    background: rgb(255, 251, 232);
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    margin: .5vw;
+    font-size: 0;
+    display: -ms-flexbox;
+    -ms-flexbox-wrap: wrap;
+    -ms-flexbox-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+}
+
+header div {
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 200px;
+    margin: .5vw;
+}
+
+header div img {
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    position: absolute;
+    max-width: 1280px;
+    min-width: 100px;
+    min-height: 50px;
+    background: rgb(255, 251, 232);
+    margin: 5px auto 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.container .box{
+    position: relative;
+    min-width: 250px;
+    min-height: auto;
+    max-width: 400px;
+    max-height: auto;
+    background: rgb(255, 251, 232);
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    align-items: center;
+    
+}
+
+
+.container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box .imgBox img{
+    max-width: 100%;
+    transition: transform 2s;
+}
+.container .box:hover .imgBox img{
+    transform: scale(1.2)
+}
+
+.container .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 50px;
+    right: 10px;
+    background: rgba(43, 43, 43, 0.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+    
+}
+.container .box:hover .details{
+    transform: scaleY(1);
+}
+
+.container .box .details .content{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 18px;
+    color: rgb(255, 251, 232);
+}
+
+.container .box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: rgb(255, 123, 75);
+}
+
+.container .box .details .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 15px;
+    
+}
+
+
+@media screen and (max-width: 400px) {
+    header div {
+        margin: 0;
+    }
+
+    header {
+        padding: 0;
+    }
+}
+
+.nav1 {
+    
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+
+.logo{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+
+.menu {
+    margin: 0 0px 0px 0;
+    background-color: rgb(255, 123, 75);
+    margin-bottom: 30px;
+}
+
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: rgb(255, 254, 249);
+    margin: 0 10px;
+    line-height: 70px;
+    margin: 0 30px 0 0;
+    }
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#Layer_1_xA0_Image_1_{
+    fill: rgb(39, 39, 39);
+    width: 105px;
+}
+
+#toggle {
+    display: none;
+}
+
+
+/* @media only screen and (max-width: 500px){
+    .container{
+        position: absolute;
+        max-width: 1280px;
+        min-width: 100px;
+        min-height: 50px;
+        background: rgb(255, 251, 232);
+        margin: 50px auto 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    #toggle:checked + .container{
+        position: absolute;
+        max-width: 1280px;
+        min-width: 100px;
+        min-height: 50px;
+        background: rgb(255, 251, 232);
+        margin: 150px auto 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        top: -100px;
+        
+    }
+
+    label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+    display: block;
+    cursor: pointer;
+    color: rgb(255, 123, 75);
+    margin-bottom: 60px;
+    }
+
+    .gallery{
+       margin-top: 275px;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid rgb(255, 254, 249);
+        margin: 0;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+
+#Layer_1_xA0_Image_1_{
+    fill: rgb(255, 123, 75);
+}
+}
+
+
+/* @media only screen and (max-width: 500px){
+    #Layer_1_xA0_Image_1_{
+        fill: rgb(255, 254, 249); 
+    }} */ 
